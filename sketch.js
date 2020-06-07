@@ -125,6 +125,7 @@ function draw() {
   }
   
   drawSprites();
+
 }
 
 
