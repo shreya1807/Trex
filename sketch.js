@@ -41,7 +41,7 @@ function setup() {
   
   trex.addAnimation("collided",trex_collided);
   
-  ground = createSprite(200,300,400,20);
+  ground = createSprite(200,180,400,20);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
   ground.velocityX = -(4+3*score/100);
@@ -69,7 +69,7 @@ function setup() {
 
 function draw() {
   background(180);
-  
+  ground.y = trex.y;
   
   text("Score: "+ score, 500,50);
   
